@@ -1,0 +1,36 @@
+.ls-hero-icons {
+
+  .ls-icon-snippet {
+    .title {
+      margin-bottom : rem(6);
+    }
+
+    .content {
+      max-width : 360px;
+      margin    : 0 auto;
+    }
+  }
+
+  .ls-section-content {
+    margin-bottom : rem(64);
+  }
+
+  .ls-icon {
+    margin-bottom : rem(16);
+    text-align    : center;
+
+    .icon {
+      height : auto;
+    }
+
+    img {
+      pointer-events : none;
+    }
+  }
+
+  .columns.is-multiline {
+    .column {
+      margin-bottom : rem(40);
+    }
+  }
+}

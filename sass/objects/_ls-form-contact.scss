@@ -1,0 +1,21 @@
+.ls-form-contact {
+  .field.is-horizontal {
+    margin-bottom : rem(30);
+  }
+
+  @media (min-width : $tablet) {
+    padding-right : rem(18);
+
+    .field-body > .field:not(:last-child) {
+      margin-right : rem(30);
+    }
+  }
+
+  .input {
+    height: rem(48);
+  }
+
+  .textarea:not([rows]) {
+    min-height : rem(254);
+  }
+}

@@ -1,0 +1,18 @@
+.ls-feature-card {
+  padding       : rem(60) 16% rem(40);
+  border-radius : 8px;
+  box-shadow    : 0 0 26.19px 0.81px rgba(42, 74, 91, 0.08), 0 0 0 1px rgba(50, 46, 97, 0.1);
+
+  .image {
+    margin    : 0 auto rem(16);
+    max-width : 100%;
+  }
+
+  .title {
+    margin-bottom : rem(16);
+  }
+
+  .card-content {
+    padding : 0;
+  }
+}

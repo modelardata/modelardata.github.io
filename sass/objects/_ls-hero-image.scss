@@ -1,0 +1,34 @@
+.ls-hero-image {
+  padding-bottom : 0;
+  padding-top    : rem(64);
+
+  .columns {
+    align-items : flex-end;
+  }
+
+  .image {
+    @media(min-width : 1981px) {
+      transform : translateX(16.5%);
+    }
+    @media(max-width : 1980px) and (min-width : $tablet) {
+      transform : translateX(33%);
+    }
+    @media (max-width : $tablet) {
+      transform : translateX(0.75rem);
+    }
+  }
+
+  .column {
+    &:nth-child(1) {
+      margin-bottom : rem(105);
+
+      @media(max-width : $tablet) {
+        margin-bottom : rem(40);
+      }
+    }
+
+    &:nth-child(2) {
+      padding : 0;
+    }
+  }
+}

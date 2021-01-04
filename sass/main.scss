@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+// Bulma
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Redefine some of Bulma colors and variables.
+$blue : #377fea;
+$purple : #653dea;
+$cyan : #3fcf94;
+$light-blue : #5d95ed;
+$dark : #3e396b;
+$light-grey : rgba($black, 0.5);
+$grey : #b0aebe;
+$orange: #e98f46;
+
+$success: $cyan;
+$card-color : $light-grey;
+$primary : $cyan;
+$primary-invert : $white;
+$info : $white;
+$info-invert : $blue;
+$primary : $blue;
+$color-tag : $green;
+$color-main-gradient-left : $blue;
+$color-main-gradient-right : $purple;
+$color-background-light: #f8faff;
+$color-carousel-bulltes: $blue;
+
+$facebook: #3b5998;
+$twitter: #55acee;
+$instagram: #6a453b;
+$google-plus: #dc4e41;
+$pinterest: #cb2027;
+
+$input-border-color: $grey;
+
+$footer-background-color: $white;
+
+// Navbar Colors
+$navbar-background-color : $blue;
+$navbar-item-hover-background-color : rgba(0, 0, 0, 0.1);
+
+$transition-function : ease-in-out;
+$button-transition : color 0.2s $transition-function, background 0.2s $transition-function;
+$button-shadow : 0 4px 9px rgba(0, 0, 0, 0.3);
+
+// Font variables
+$size-2 : 2rem;
+$size-3 : 1.75rem;
+$family-sans-serif : 'Lato', sans-serif;
+$size-7 : 0.875rem;
+
+// Columns Variables
+$column-gap : 0.8125rem;
+
+// Images dimensions
+$dimensions : 16 24 32 48 64 96 128 159;
+
+// Function to convert pixels to rems
+$baseFontSize : 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels : $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context : $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@import "~bulma/sass/utilities/derived-variables.sass";
+
+@import "~bulma";
+
+// Import objects and other partial files.
+@import "./objects/ls-helper";
+@import "./objects/ls-main-hero";
+@import "./objects/ls-banner";
+@import "./objects/ls-button";
+@import "./objects/ls-main-nav";
+@import "./objects/ls-feature-card";
+@import "./objects/ls-features-cards";
+@import "./objects/ls-hero-image";
+@import "./objects/ls-card";
+@import "./objects/ls-cards-grid";
+@import "./objects/ls-hero-icons";
+@import "./objects/ls-price-card";
+@import "./objects/ls-footer";
+@import "./objects/ls-footer-links";
+@import "./objects/ls-round-input";
+@import "./objects/ls-author-card";
+@import "./objects/ls-carousel";
+@import "./objects/ls-form-contact";
+@import "./objects/ls-info-contact";
+@import "./objects/ls-social-icon";
+@import "./objects/ls-item-contact";
+

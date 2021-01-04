@@ -1,0 +1,37 @@
+.ls-footer {
+  padding : rem(32) 0 0;
+
+  .ls-bottom-links {
+    justify-content : flex-end;
+    align-items     : center;
+
+    @media(max-width : $tablet) {
+      justify-content : space-around;
+    }
+
+    @media(max-width : 568px) {
+      flex-wrap : wrap;
+    }
+  }
+
+  .ls-bottom-link {
+    padding : 0 1rem;
+
+    a {
+      transition : $button-transition;
+      color      : $grey;
+
+      &:hover, &:active {
+        color : darken($grey, 12);
+      }
+    }
+
+    @media(max-width : 568px) {
+      flex-wrap : wrap;
+      padding   : 1rem;
+    }
+  }
+}
+.footer {
+  padding : 3rem 1.5rem 1.75rem;
+}

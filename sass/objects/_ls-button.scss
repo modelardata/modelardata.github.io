@@ -1,0 +1,35 @@
+.ls-button {
+  transition : $button-transition;
+  padding    : rem(20) rem(25);
+  max-width  : 100%;
+  box-shadow : $button-shadow;
+}
+.button {
+  transition : $button-transition, border 0.2s $transition-function;
+
+  &.ls-orange {
+    color        : $orange;
+    border-color : currentColor;
+
+    &:hover, &:active {
+      color            : $white;
+      background-color : $orange;
+    }
+  }
+
+  &.ls-purple {
+    color        : $purple;
+    border-color : currentColor;
+
+    &:hover, &:active {
+      color            : $white;
+      background-color : $purple;
+    }
+  }
+}
+.ls-button-slim {
+  width     : 100%;
+  max-width : rem(175);
+  padding   : rem(12) 0;
+  height    : auto;
+}

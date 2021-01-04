@@ -1,0 +1,14 @@
+.ls-footer-links {
+ li {
+
+ }
+
+  a {
+    transition: $button-transition;
+    color: $grey;
+
+    &:hover, &:active {
+      color: darken($grey, 12);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.ls-round-input {
+  position      : relative;
+  padding       : rem(7);
+  border-radius : 32px;
+  overflow      : hidden;
+
+  input {
+    height        : rem(53);
+    border-radius : 32px;
+    border        : none;
+    box-shadow    : none;
+    padding-right : rem(180);
+
+    @media(max-width : $tablet) {
+      padding-right : rem(100);
+    }
+  }
+
+  .button {
+    position      : absolute;
+    top           : rem(7);
+    right         : rem(7);
+    height        : rem(53);
+    border-radius : 32px;
+    width         : rem(180);
+    max-width     : 100%;
+    font-weight   : 700;
+
+    @media(max-width : $tablet) {
+      width : rem(100);
+    }
+  }
+}

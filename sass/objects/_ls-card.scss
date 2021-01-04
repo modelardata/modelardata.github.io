@@ -1,0 +1,48 @@
+.ls-card {
+  box-shadow : none;
+
+  .card-image {
+    overflow      : hidden;
+    border-radius : 8px;
+    position      : relative;
+
+    &:hover {
+      .buttons {
+        opacity : 1;
+      }
+    }
+
+    .buttons {
+      opacity         : 0;
+      transition      : 0.25s opacity $transition-function;
+      position        : absolute;
+      width           : 100%;
+      height          : rem(44);
+      top             : 0;
+      bottom          : 0;
+      margin          : auto;
+      right           : 0;
+      justify-content : center;
+    }
+
+    .button {
+      margin    : 0 rem(15);
+      width     : rem(114);
+      max-width : 100%;
+    }
+  }
+
+  .card-content {
+    padding : rem(22) 0 rem(40);
+
+    .title {
+      display       : inline-block;
+      margin-bottom : rem(16);
+
+      a {
+        color      : inherit;
+        transition : $button-transition;
+      }
+    }
+  }
+}

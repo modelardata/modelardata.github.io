@@ -1,0 +1,59 @@
+.ls-main-hero {
+  padding-top : rem(16);
+  position    : relative;
+  overflow    : hidden;
+
+  &:before {
+    position   : absolute;
+    transform  : skewY(-5deg);
+    bottom     : 7vw;
+    right      : 0;
+    width      : 100%;
+    height     : 150%;
+    content    : '';
+    background : linear-gradient(to right, $color-main-gradient-left 20%, $color-main-gradient-right) $color-main-gradient-left;
+  }
+
+  .hero-body {
+    padding-top : rem(30);
+    width       : 100%;
+  }
+
+  .subtitle {
+    margin-bottom : rem(48);
+  }
+
+  .left {
+    margin-top : rem(60);
+
+    @media(max-width : $tablet) {
+      margin-top : 0;
+    }
+  }
+
+  .ls-banner {
+    margin-bottom : rem(40);
+  }
+
+  .ls-main-hero--button {
+    margin-right : rem(16);
+  }
+
+  .ls-main-hero--image {
+    width : 100%;
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+
+    .button {
+      flex: 0 1 rem(195);
+
+      @media(max-width: 414px) {
+        flex: 0 1 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}

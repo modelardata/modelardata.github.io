@@ -1,0 +1,55 @@
+.ls-social-buttons {
+  margin-top: rem(42);
+}
+.ls-social-icon {
+  display      : inline-block;
+  width        : rem(48);
+  height       : rem(48);
+  margin-right : rem(6);
+
+  .fa-layers {
+    display        : inline-block;
+    width          : rem(48);
+    vertical-align : top;
+  }
+}
+.ls-facebook {
+  transition : $transition-function 0.2s color;
+  color      : $facebook;
+
+  &:hover {
+    color : darken($facebook, 10)
+  }
+}
+.ls-google-plus {
+  transition : $transition-function 0.2s color;
+  color      : $google-plus;
+
+  &:hover {
+    color : darken($google-plus, 10)
+  }
+}
+.ls-twitter {
+  transition : $transition-function 0.2s color;
+  color      : $twitter;
+
+  &:hover {
+    color : darken($twitter, 10)
+  }
+}
+.ls-instagram {
+  transition : $transition-function 0.2s color;
+  color      : $instagram;
+
+  &:hover {
+    color : darken($instagram, 10)
+  }
+}
+.ls-pinterest {
+  transition : $transition-function 0.2s color;
+  color      : $pinterest;
+
+  &:hover {
+    color : darken($pinterest, 10)
+  }
+}

@@ -1,0 +1,49 @@
+.ls-carousel {
+  padding : rem(32) 0;
+
+  .ls-carousel-item {
+    margin : 0 rem(16);
+  }
+}
+.ls-carousel-bullets {
+  padding-top     : rem(28);
+  width           : 100%;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+
+  .ls-carousel-bullet {
+    position      : relative;
+    margin        : 0 rem(8);
+    width         : rem(12);
+    height        : rem(12);
+    border        : none;
+    border-radius : 50%;
+    background    : $color-carousel-bulltes;
+    outline       : none;
+    cursor        : pointer;
+
+    &:after {
+      transition    : $button-transition;
+      content       : '';
+      top           : 0;
+      left          : - rem(3);
+      right         : 0;
+      bottom        : 0;
+      margin        : auto;
+      position      : absolute;
+      width         : rem(18);
+      height        : rem(18);
+      border        : none;
+      border-radius : 50%;
+      background    : rgba($color-carousel-bulltes, 0.5);
+      outline       : none;
+    }
+
+    &:hover, &:active {
+      &:after {
+        background : rgba($color-carousel-bulltes, 0.8);
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.ls-price-card {
+  box-shadow    : 0 1px 19px 0 rgba(42, 74, 91, 0.07), 0 0 0 1px rgba(50, 46, 97, 0.1);
+  padding       : rem(64) 2.5%;
+  margin        : 0 rem(24) rem(32);
+  border-radius : 5px;
+  flex          : 1 1 260px;
+
+  &.ls-active {
+    padding    : rem(112) 3%;
+    box-shadow : 0 12px 28px 0 rgba(42, 74, 91, 0.18), 0 0 0 1px rgba(50, 46, 97, 0.1);
+  }
+
+  .subtitle {
+    font-size     : rem(24);
+    margin-top    : -0.75rem !important;
+    margin-bottom : rem(48);
+  }
+
+  li {
+    margin-bottom : rem(8);
+  }
+
+  .button {
+    margin-top : rem(48);
+    width      : rem(242);
+    max-width  : 100%;
+    font-size  : rem(18);
+  }
+
+  @media(max-width : $tablet) {
+    padding : rem(28) 2.5%;
+
+    &.ls-active {
+      padding : rem(36) 3%;
+    }
+  }
+}

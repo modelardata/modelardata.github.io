@@ -1,0 +1,23 @@
+.ls-banner {
+  background    : rgba(0, 0, 0, 0.1);
+  padding       : rem(5);
+  border-radius : 30px;
+  cursor        : pointer;
+  display       : flex;
+  align-items   : center;
+
+  .tag {
+    border-radius  : 20px;
+    padding        : rem(5) rem(10);
+    font-size      : rem(12);
+    text-transform : uppercase;
+    margin-right   : rem(10);
+    display        : inline-block;
+    line-height    : initial;
+  }
+
+  .ls-banner--icon {
+    font-size : rem(10);
+    margin    : 0 rem(10);
+  }
+}

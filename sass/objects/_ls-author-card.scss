@@ -1,0 +1,26 @@
+.ls-author-card {
+  box-shadow    : 0 7px 18px 0 rgba(41, 67, 107, 0.1);
+  border-radius : 5px;
+
+  .media:not(:last-child) {
+    margin-bottom : rem(21);
+  }
+
+  .card-content {
+    padding : rem(31) rem(58) rem(31) rem(31);
+  }
+
+  .title {
+    padding-bottom : rem(10);
+  }
+
+  img {
+    border: 1px $light-grey solid;
+  }
+
+  @media(max-width: $tablet) {
+    .card-content {
+      padding : rem(31);
+    }
+  }
+}
